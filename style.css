@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&family=Roboto&display=swap');
+
+*,
+*:after,
+*:before {
+box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+
+h1, h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: bisque;
+
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 50);
+
+    margin-bottom: 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.container1 {
+    margin-bottom: 20px;
+}
+
+.container2{
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid ;
+    background-color: bisque;
+    color: black;
+    padding: 20px 10px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img__avatar {
+    margin-right: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black; 
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 50);
+}
+
+.avatar__text {
+    height: 300px;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+
+    background-color: bisque;
+
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatar__text p {
+    margin: 0;
+}
+
+.link {
+    text-align: center;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 8px;
+    border-bottom: 1px solid grey;
+    color: gray;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.table th:hover,
+.table td:hover {
+    background-color: grey;
+    opacity: 0.8;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: gray;
+}
+
+.table th:nth-child(2),
+.table th:nth-child(3) {
+    color: gray;
+}
+
+.table th:hover,
+.table td:hover {
+    color: #f1f1f1;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: black;
+    color: bisque;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+}
+a:visited { 
+    text-decoration: none; 
+}
+a:hover { 
+    color: aqua;
+    font-size: 2rem;
+}
+a:focus { 
+    text-decoration: none; 
+}
+a:hover, a:active { 
+    text-decoration: none;
+}
+
+.form_row {
+    display: flex;
+    margin: 10px;
+}
+
+.form_row .form_group {
+    width: 50%;
+}
+
+.form_group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+@media screen and (max-width: 650px) {
+
+    body {
+        font-size: 0.5rem;
+    }
+
+    h1, h2 {
+        font-size: 0.5rem;
+    }
+
+    .avatar {
+        flex-flow: column wrap;
+    }
+
+    .img__avatar {
+        margin-bottom: 30px;
+        width: 100%-50%;
+        height: 100%-50%;
+        margin-right: 0px;
+    }
+
+    .avatar__text {
+        height: 100%;
+    }
+    
+    .link {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 0.5rem;
+    }
+
+    .form_group label,
+    .form_group input,
+    .form_group textarea {
+        font-size: 0.5rem;
+    }
+
+    .btn {
+        font-size: 0.5rem;
+    }
+
+    .btn:hover {
+        font-size: 0.75rem;
+    }
+}
